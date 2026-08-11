@@ -25,7 +25,10 @@ const hasRightSidebars =
 		0;
 
 const ANIME_MODE = siteConfig.anime?.mode || "bangumi";
-const sourceConfigs = getAnimeSourceConfigs();
+const sourceConfigs = getAnimeSourceConfigs(
+	siteConfig.bilibili?.fetchOnDev,
+	siteConfig.bangumi?.fetchOnDev,
+);
 const { animeList, currentConfig } = getAnimeList(ANIME_MODE, sourceConfigs);
 
 let emptyDescription = "";

@@ -73,7 +73,10 @@ export function loadAnimeData(filename: string): AnimeItem[] {
 	}
 }
 
-export function getAnimeSourceConfigs(): Record<string, AnimeSourceConfig> {
+export function getAnimeSourceConfigs(
+	bilibiliFetchOnDev?: boolean,
+	bangumiFetchOnDev?: boolean,
+): Record<string, AnimeSourceConfig> {
 	return {
 		local: {
 			type: "local",
@@ -82,13 +85,13 @@ export function getAnimeSourceConfigs(): Record<string, AnimeSourceConfig> {
 		bilibili: {
 			type: "json",
 			filename: "bilibili-data.json",
-			fetchOnDev: undefined,
+			fetchOnDev: bilibiliFetchOnDev,
 			emptyDescription: i18n(I18nKey.animeEmptyBilibili),
 		},
 		bangumi: {
 			type: "json",
 			filename: "bangumi-data.json",
-			fetchOnDev: undefined,
+			fetchOnDev: bangumiFetchOnDev,
 			emptyDescription: i18n(I18nKey.animeEmptyBangumi),
 		},
 	};
