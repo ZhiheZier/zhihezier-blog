@@ -1,0 +1,31 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "maimai-salt.moc3",
+		"Textures": [
+			"maimai-salt.4096/texture_00.png",
+			"maimai-salt.4096/texture_01.png",
+			"maimai-salt.4096/texture_02.png",
+			"maimai-salt.4096/texture_03.png",
+			"maimai-salt.4096/texture_04.png",
+			"maimai-salt.4096/texture_05.png"
+		],
+		"Physics": "maimai-salt.physics3.json",
+		"DisplayInfo": "maimai-salt.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		}
+	]
+}

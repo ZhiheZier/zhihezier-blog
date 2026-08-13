@@ -123,16 +123,21 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/1.webp",
-				"/assets/desktop-banner/2.webp",
-				"/assets/desktop-banner/3.webp",
-				"/assets/desktop-banner/4.webp",
+				"/assets/desktop-banner/1.jpg",
+				"/assets/desktop-banner/2.jpg",
+				"/assets/desktop-banner/3.jpg",
+				"/assets/desktop-banner/4.jpg",
+				"/assets/desktop-banner/5.jpg",
 			], // 桌面横幅图片
 			mobile: [
-				"/assets/mobile-banner/1.webp",
-				"/assets/mobile-banner/2.webp",
-				"/assets/mobile-banner/3.webp",
-				"/assets/mobile-banner/4.webp",
+				"/assets/mobile-banner/1.jpg",
+				"/assets/mobile-banner/2.jpg",
+				"/assets/mobile-banner/3.jpg",
+				"/assets/mobile-banner/4.jpg",
+				"/assets/mobile-banner/5.jpg",
+				"/assets/mobile-banner/6.jpg",
+				"/assets/mobile-banner/7.jpg",
+				"/assets/mobile-banner/8.jpg",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -162,15 +167,19 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true,
-			title: "わたしの部屋",
+			title: "夜更かし研究室",
 			switchable: true,
 
 			subtitle: [
-				"特別なことはないけど、君がいると十分です",
-				"今でもあなたは私の光",
-				"君ってさ、知らないうちに私の毎日になってたよ",
-				"君と話すと、なんか毎日がちょっと楽しくなるんだ",
-				"今日はなんでもない日。でも、ちょっとだけいい日",
+				"静かな夜に、好きなことを少しずつ",
+				"夜はまだ長いから、もう少しだけ",
+				"世界が眠ったあと、研究室はまだ明るい",
+				"夜が長いほど、考えることも増えていく",
+				"今日も少しだけ、夜更かししていこう",
+				"こんな夜にしか、生まれないものがある",
+				"明日になれば忘れることも、今は大切だから",
+				"君が眠るまで、ここで待っています",
+				"コードを書いたり、音楽を聴いたり、たまに夢を見たり"
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果

@@ -7,14 +7,19 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 			"/assets/desktop-banner/1.jpg",
 			"/assets/desktop-banner/2.jpg",
 			"/assets/desktop-banner/3.jpg",
-			"/assets/desktop-banner/4.webp",
-		],
+			"/assets/desktop-banner/4.jpg",
+			"/assets/desktop-banner/5.jpg",
+		], // 桌面横幅图片
 		mobile: [
 			"/assets/mobile-banner/1.jpg",
 			"/assets/mobile-banner/2.jpg",
 			"/assets/mobile-banner/3.jpg",
-			"/assets/mobile-banner/4.webp",
-		],
+			"/assets/mobile-banner/4.jpg",
+			"/assets/mobile-banner/5.jpg",
+			"/assets/mobile-banner/6.jpg",
+			"/assets/mobile-banner/7.jpg",
+			"/assets/mobile-banner/8.jpg",
+		], // 移动横幅图片
 	},
 	position: "center",
 	carousel: {
