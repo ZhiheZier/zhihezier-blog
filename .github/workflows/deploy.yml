@@ -1,0 +1,50 @@
+name: Deploy to Pages Branch
+
+# 本工作流用于部署到 GitHub Pages。
+# 当前项目使用 Vercel 部署，因此默认只保留手动触发（workflow_dispatch）。
+# 如果你（或 fork 此仓库的人）想用 GitHub Pages 自动部署，
+# 取消下面 push 注释即可：
+#on:
+#  push:
+#    branches: [ master ]
+#  repository_dispatch:
+#    types:
+#      - content-updated
+#  workflow_dispatch:
+
+on:
+  workflow_dispatch:
+
+# 需要写入权限来推送到pages分支
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build site
+        run: pnpm build
+        env:
+          ENABLE_CONTENT_SYNC: false
+
+      - name: Deploy to pages branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: pages # 部署到pages分支
+          folder: dist # Astro默认构建输出目录
+          clean: true # 清理目标分支中的旧文件
