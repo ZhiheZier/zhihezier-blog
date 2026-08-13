@@ -1,0 +1,10 @@
+{
+    "title": "二次元美图",
+    "description": "震撼美味",
+    "date": "2026-08-12",
+    "location": "日本东京",
+    "tags": ["二次元", "ACG"],
+    "layout": "masonry",
+    "columns": 3,
+    "hidden": false
+  }
