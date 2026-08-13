@@ -3,7 +3,13 @@ import type { PioConfig } from "../types/config";
 // Pio 看板娘配置
 export const pioConfig: PioConfig = {
 	enable: true, // 启用看板娘
-	models: ["/pio/models/maimai-salt/maimai-salt.model3.json"], // 默认模型路径
+	models: [
+		{
+			path: "/pio/models/maimai-salt/maimai-salt.model3.json",
+			scale: 2, // 缩放比例，调大只显示上半身
+			offset: [0, 0.5], // 位置偏移 [x, y]，y 正值上移
+		},
+	], // 模型配置
 	position: "left", // 模型位置
 	width: 280, // 默认宽度
 	height: 250, // 默认高度
@@ -11,16 +17,16 @@ export const pioConfig: PioConfig = {
 	hiddenOnMobile: true, // 默认在移动设备上隐藏
 	hideAboutMenu: false, // 隐藏内置 About 菜单按钮
 	dialog: {
-		welcome: "Welcome to ZhiheZier Website!", // 欢迎词
+		welcome: "ZhiheZierのサイトへようこそ！", // 欢迎词
 		touch: [
-			"What are you doing?",
-			"Stop touching me!",
-			"HENTAI!",
-			"Don't bully me like that!",
+			"何してるの？",
+			"触らないで！",
+			"変態！",
+			"いじめないでよ！",
 		], // 触摸提示
-		home: "Click here to go back to homepage!", // 首页提示
-		skin: ["Want to see my new outfit?", "The new outfit looks great~"], // 换装提示
-		close: "QWQ See you next time~", // 关闭提示
+		home: "ここをクリックしてホームに戻ってね！", // 首页提示
+		skin: ["新しい衣装、見たい？", "新しい衣装、似合ってる？"], // 换装提示
+		close: "QWQ またね～", // 关闭提示
 		link: "https://github.com/ZhiheZier/zhihezier-blog", // 关于链接
 	},
 };

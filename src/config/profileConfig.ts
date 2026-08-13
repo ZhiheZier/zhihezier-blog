@@ -25,5 +25,10 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa7-brands:github",
 			url: "https://github.com/ZhiheZier",
 		},
+		{
+			name: "RSS",
+			icon: "fa7-solid:rss",
+			url: "https://blog.zhihezier.com/rss/",
+		},
 	],
 };

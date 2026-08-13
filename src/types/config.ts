@@ -504,7 +504,14 @@ export interface FullscreenWallpaperConfig {
  */
 export interface PioConfig {
 	enable: boolean; // 是否启用看板娘
-	models?: string[]; // 模型文件路径数组（支持 .model.json 和 .model3.json）
+	models?: (
+		| string
+		| {
+				path: string; // 模型文件路径
+				scale?: number; // 缩放比例，默认 1
+				offset?: [x: number, y: number]; // 位置偏移 [x, y]，y 正值上移
+		  }
+	)[]; // 模型配置数组（支持 .model.json 和 .model3.json）
 	position?: "left" | "right"; // 看板娘位置
 	width?: number; // 看板娘宽度
 	height?: number; // 看板娘高度
