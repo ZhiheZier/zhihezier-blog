@@ -4,15 +4,15 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	enable: true,
 	src: {
 		desktop: [
-			"/assets/desktop-banner/1.webp",
-			"/assets/desktop-banner/2.webp",
-			"/assets/desktop-banner/3.webp",
+			"/assets/desktop-banner/1.jpg",
+			"/assets/desktop-banner/2.jpg",
+			"/assets/desktop-banner/3.jpg",
 			"/assets/desktop-banner/4.webp",
 		],
 		mobile: [
-			"/assets/mobile-banner/1.webp",
-			"/assets/mobile-banner/2.webp",
-			"/assets/mobile-banner/3.webp",
+			"/assets/mobile-banner/1.jpg",
+			"/assets/mobile-banner/2.jpg",
+			"/assets/mobile-banner/3.jpg",
 			"/assets/mobile-banner/4.webp",
 		],
 	},
