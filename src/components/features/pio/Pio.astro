@@ -40,7 +40,7 @@ const widgetConfig: Record<string, unknown> = {
 
 if (config.menus?.items && config.menus.items.length > 0) {
 	widgetConfig.menus = {
-		items: config.menus.items.map(({ icon, label, action }) => ({
+		extraItems: config.menus.items.map(({ icon, label, action }) => ({
 			icon,
 			label,
 			action,

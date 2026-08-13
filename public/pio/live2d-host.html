@@ -120,12 +120,22 @@
       destroyWidget();
     }
 
-    if (config.menus && config.menus.items) {
-      config.menus.items = config.menus.items.map(function(item) {
+    if (config.menus && config.menus.extraItems) {
+      config.menus.extraItems = config.menus.extraItems.map(function(item) {
+        var onClick;
+        if (item.action && item.action.indexOf('expression:') === 0) {
+          var exprName = item.action.slice('expression:'.length);
+          onClick = function(w) {
+            console.log('[pio] switch expression:', exprName, 'available:', w.l2d.getExpressions());
+            w.l2d.setExpression(exprName);
+          };
+        } else {
+          onClick = menuActions[item.action] || function() {};
+        }
         return {
           icon: item.icon,
           label: item.label,
-          onClick: menuActions[item.action] || function() {}
+          onClick: onClick
         };
       });
     }

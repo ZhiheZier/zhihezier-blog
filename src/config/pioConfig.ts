@@ -7,7 +7,7 @@ export const pioConfig: PioConfig = {
 		{
 			path: "/pio/models/maimai-salt/maimai-salt.model3.json",
 			scale: 2, // 缩放比例，调大只显示上半身
-			offset: [0, 0.5], // 位置偏移 [x, y]，y 正值上移
+			offset: [0, -1], // 位置偏移 [x, y]，y 正值上移
 		},
 	], // 模型配置
 	position: "left", // 模型位置
@@ -23,10 +23,17 @@ export const pioConfig: PioConfig = {
 			"触らないで！",
 			"変態！",
 			"いじめないでよ！",
+			"NyaNya,ぐるぐる~",
 		], // 触摸提示
 		home: "ここをクリックしてホームに戻ってね！", // 首页提示
 		skin: ["新しい衣装、見たい？", "新しい衣装、似合ってる？"], // 换装提示
 		close: "QWQ またね～", // 关闭提示
 		link: "https://github.com/ZhiheZier/zhihezier-blog", // 关于链接
+	},
+	menus: {
+		items: [
+			{ icon: "mdi:emoticon-cry-outline", label: "哭哭", action: "expression:哭哭" },
+			{ icon: "mdi:emoticon-angry-outline", label: "生气", action: "expression:生气" },
+		],
 	},
 };
