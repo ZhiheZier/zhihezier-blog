@@ -73,4 +73,40 @@ export const aiToolsData: AITool[] = [
 		tags: ["Coding", "Agent", "Web UI"],
 		color: "#8B5CF6",
 	},
+	{
+		id: "chatgpt",
+		name: "ChatGPT",
+		description: {
+			en: "General-purpose conversational AI assistant by OpenAI.",
+			zh_CN: "OpenAI 出品的通用对话式 AI 助手。",
+		},
+		icon: "fa7-brands:openai",
+		category: "chat",
+		frequency: "daily",
+		url: "https://chatgpt.com",
+		usage: {
+			en: "Daily: Q&A, writing, brainstorming",
+			zh_CN: "每天：问答、写作、头脑风暴",
+		},
+		tags: ["Chat", "AI", "OpenAI"],
+		color: "#10A37F",
+	},
+	{
+		id: "deepseek",
+		name: "DeepSeek",
+		description: {
+			en: "DeepSeek open platform for LLM API access.",
+			zh_CN: "DeepSeek 开放平台，提供大模型 API 接入。",
+		},
+		icon: "material-symbols:smart-toy",
+		category: "chat",
+		frequency: "daily",
+		url: "https://platform.deepseek.com",
+		usage: {
+			en: "Daily: API access, reasoning, coding help",
+			zh_CN: "每天：API 接入、推理、代码辅助",
+		},
+		tags: ["Chat", "AI", "API"],
+		color: "#4D6BFE",
+	},
 ];

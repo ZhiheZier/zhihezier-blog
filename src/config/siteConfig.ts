@@ -136,8 +136,6 @@ export const siteConfig: SiteConfig = {
 				"/assets/mobile-banner/4.jpg",
 				"/assets/mobile-banner/5.jpg",
 				"/assets/mobile-banner/6.jpg",
-				"/assets/mobile-banner/7.jpg",
-				"/assets/mobile-banner/8.jpg",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 

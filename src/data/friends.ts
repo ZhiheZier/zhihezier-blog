@@ -35,7 +35,7 @@ export const friendsData: FriendItem[] = [
 		imgurl: "https://avatars.githubusercontent.com/u/14985020?v=4&s=640",
 		desc: "Develop. Preview. Ship.",
 		siteurl: "https://vercel.com",
-		tags: ["部署", "云服务"],
+		tags: ["云服务"],
 	},
 	{
 		id: 4,
@@ -43,7 +43,7 @@ export const friendsData: FriendItem[] = [
 		imgurl: "https://avatars.githubusercontent.com/u/67109815?v=4&s=640",
 		desc: "A utility-first CSS framework for rapidly building custom designs",
 		siteurl: "https://tailwindcss.com",
-		tags: ["框架", "CSS"],
+		tags: ["框架"],
 	},
 	{
 		id: 5,
@@ -76,6 +76,14 @@ export const friendsData: FriendItem[] = [
 		desc: "The web's most comprehensive resource for web developers",
 		siteurl: "https://developer.mozilla.org",
 		tags: ["文档"],
+	},
+	{
+		id: 9,
+		title: "SakuraFrp",
+		imgurl: "https://www.natfrp.com/favicon.ico?v=2",
+		desc: "内网穿透服务",
+		siteurl: "https://www.natfrp.com/",
+		tags: ["工具"],
 	},
 ];
 
