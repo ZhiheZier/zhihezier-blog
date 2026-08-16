@@ -6,8 +6,8 @@ export const pioConfig: PioConfig = {
 	models: [
 		{
 			path: "/pio/models/maimai-salt/maimai-salt.model3.json",
-			scale: 2, // 缩放比例，调大只显示上半身
-			offset: [0, -1], // 位置偏移 [x, y]，y 正值上移
+			scale: 1.6, // 缩放比例，调大只显示上半身
+			offset: [0, -0.7], // 位置偏移 [x, y]，y 正值上移
 		},
 	], // 模型配置
 	position: "left", // 模型位置
@@ -29,6 +29,9 @@ export const pioConfig: PioConfig = {
 		skin: ["新しい衣装、見たい？", "新しい衣装、似合ってる？"], // 换装提示
 		close: "QWQ またね～", // 关闭提示
 		link: "https://github.com/ZhiheZier/zhihezier-blog", // 关于链接
+	},
+	tips: {
+		offset: { x: 0, y: 0 }, // 对话气泡偏移（px），y 正值上移
 	},
 	menus: {
 		items: [

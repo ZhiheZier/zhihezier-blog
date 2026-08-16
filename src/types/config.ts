@@ -536,6 +536,10 @@ export interface PioConfig {
 		messages?: string[]; // 循环提示内容
 		duration?: number; // 每条 tips 展示时长（ms）
 		interval?: number; // tips 循环间隔（ms）
+		offset?: {
+			x?: number; // 水平偏移（px），正值右移
+			y?: number; // 垂直偏移（px），负值上移
+		};
 	};
 	menus?: {
 		items?: {

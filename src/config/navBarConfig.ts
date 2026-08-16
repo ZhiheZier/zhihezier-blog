@@ -140,6 +140,18 @@ export const navBarConfig: NavBarConfig = {
 			icon: "material-symbols:link",
 			children: [
 				{
+					name: "主页",
+					url: "https://zhihezier.com",
+					external: true,
+					icon: "mdi:home-outline",
+				},
+				{
+					name: "文档",
+					url: "https://docs.zhihezier.com",
+					external: true,
+					icon: "mdi:book-open-page-variant-outline",
+				},
+				{
 					name: "GitHub",
 					url: "https://github.com/ZhiheZier",
 					external: true, // 外部链接，新标签页打开
