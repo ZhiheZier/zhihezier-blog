@@ -85,6 +85,14 @@ export const friendsData: FriendItem[] = [
 		siteurl: "https://www.natfrp.com/",
 		tags: ["工具"],
 	},
+	{
+		id: 10,
+		title: "VitePress",
+		imgurl: "https://vitepress.dev/vitepress-logo-mini.png",
+		desc: "Vite & Vue powered static site generator",
+		siteurl: "https://vitepress.dev/",
+		tags: ["文档", "框架"],
+	},
 ];
 
 // 获取所有友情链接数据
