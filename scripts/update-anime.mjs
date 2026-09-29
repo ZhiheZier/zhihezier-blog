@@ -9,9 +9,8 @@ function getAnimeModeFromConfig() {
 
 function runScript(scriptPath) {
 	return new Promise((resolve, reject) => {
-		const script = spawn("node", [scriptPath], {
+		const script = spawn(process.execPath, [scriptPath], {
 			stdio: "inherit",
-			shell: true,
 		});
 
 		script.on("close", (code) => {
@@ -48,4 +47,3 @@ main().catch((err) => {
 	console.error(err);
 	process.exit(1);
 });
-
