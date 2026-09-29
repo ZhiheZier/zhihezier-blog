@@ -54,6 +54,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Verify content isolation
+        # The fixture does not read or clone the real private content repository.
+        run: node --test tests/content-isolation.test.mjs
+
       - name: Run Astro Check
         run: pnpm astro check
         env:
