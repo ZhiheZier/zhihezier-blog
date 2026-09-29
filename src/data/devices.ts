@@ -16,22 +16,21 @@ export type DeviceCategory = Record<string, Device[]> & {
 export const devicesData: DeviceCategory = {
 	OnePlus: [
 		{
-			name: "OnePlus Ace 3 Edition",
-			image: "/images/device/oneplus-ace3.png",
-			specs: "骁龙 8g2 / 16GB + 512GB",
-			description:
-				"第二代骁龙 8 旗舰芯片，1.5K 东方屏，5500mAh 电池，100W 超级闪充。",
-			link: "https://www.oneplus.com/cn/ace-3-edition/specs",
+			name: "OnePlus 13T",
+			image: "/images/device/oneplus13t.webp",
+			specs: "Gray / 16G + 1TB",
+			description: "Flagship performance, Hasselblad imaging, 80W SuperVOOC.",
+			link: "https://www.oneplus.com/cn/13t",
 		},
 	],
-	ASUS: [
+	Router: [
 		{
-			name: "天选4（TUF Gaming F15 2023）",
-			image: "/images/device/tuf-f15-2023.png",
-			specs: "i9-13900H / RTX 4060 / 16GB",
+			name: "GL-MT3000",
+			image: "/images/device/mt3000.webp",
+			specs: "1000Mbps / 2.5G",
 			description:
-				"华硕天选4 游戏本，Intel i9 处理器，RTX 4060 显卡，144Hz 高刷屏。",
-			link: "https://www.asus.com.cn/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-f15-2023",
+				"Portable WiFi 6 router suitable for business trips and home use.",
+			link: "https://www.gl-inet.cn/products/gl-mt3000/",
 		},
 	],
 };

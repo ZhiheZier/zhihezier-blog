@@ -18,7 +18,7 @@ export const friendsData: FriendItem[] = [
 		imgurl: "https://avatars.githubusercontent.com/u/44914786?v=4&s=640",
 		desc: "The web framework for content-driven websites",
 		siteurl: "https://github.com/withastro/astro",
-		tags: ["框架"],
+		tags: ["Framework"],
 	},
 	{
 		id: 2,
@@ -27,7 +27,7 @@ export const friendsData: FriendItem[] = [
 			"https://q.qlogo.cn/headimg_dl?dst_uin=3231515355&spec=640&img_type=jpg",
 		desc: "Mizuki User Manual",
 		siteurl: "https://docs.mizuki.mysqil.com",
-		tags: ["文档"],
+		tags: ["Docs"],
 	},
 	{
 		id: 3,
@@ -35,7 +35,7 @@ export const friendsData: FriendItem[] = [
 		imgurl: "https://avatars.githubusercontent.com/u/14985020?v=4&s=640",
 		desc: "Develop. Preview. Ship.",
 		siteurl: "https://vercel.com",
-		tags: ["云服务"],
+		tags: ["Hosting", "Cloud"],
 	},
 	{
 		id: 4,
@@ -43,7 +43,7 @@ export const friendsData: FriendItem[] = [
 		imgurl: "https://avatars.githubusercontent.com/u/67109815?v=4&s=640",
 		desc: "A utility-first CSS framework for rapidly building custom designs",
 		siteurl: "https://tailwindcss.com",
-		tags: ["框架"],
+		tags: ["CSS", "Framework"],
 	},
 	{
 		id: 5,
@@ -51,7 +51,7 @@ export const friendsData: FriendItem[] = [
 		imgurl: "https://avatars.githubusercontent.com/u/6154722?v=4&s=640",
 		desc: "TypeScript is JavaScript with syntax for types",
 		siteurl: "https://www.typescriptlang.org",
-		tags: ["语言"],
+		tags: ["Language", "JavaScript"],
 	},
 	{
 		id: 6,
@@ -59,7 +59,7 @@ export const friendsData: FriendItem[] = [
 		imgurl: "https://avatars.githubusercontent.com/u/6412038?v=4&s=640",
 		desc: "A JavaScript library for building user interfaces",
 		siteurl: "https://reactjs.org",
-		tags: ["框架"],
+		tags: ["Framework", "JavaScript"],
 	},
 	{
 		id: 7,
@@ -67,7 +67,7 @@ export const friendsData: FriendItem[] = [
 		imgurl: "https://avatars.githubusercontent.com/u/9919?v=4&s=640",
 		desc: "Where the world builds software",
 		siteurl: "https://github.com",
-		tags: ["平台"],
+		tags: ["Development", "Platform"],
 	},
 	{
 		id: 8,
@@ -75,15 +75,7 @@ export const friendsData: FriendItem[] = [
 		imgurl: "https://avatars.githubusercontent.com/u/7565578?v=4&s=640",
 		desc: "The web's most comprehensive resource for web developers",
 		siteurl: "https://developer.mozilla.org",
-		tags: ["文档"],
-	},
-	{
-		id: 9,
-		title: "SakuraFrp",
-		imgurl: "https://www.natfrp.com/favicon.ico?v=2",
-		desc: "内网穿透服务",
-		siteurl: "https://www.natfrp.com/",
-		tags: ["工具"],
+		tags: ["Docs", "Reference"],
 	},
 ];
 
