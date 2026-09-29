@@ -20,47 +20,21 @@ export interface Project {
 }
 
 export const projectsData: Project[] = [
-  {
-    "id": "astrbot-maimaidx",
-    "title": "AstrBot MaimaiDX 插件",
-    "description": "基于 AstrBot 的舞萌DX（Maimai DX）插件，提供查分、数据查询等机器人功能。",
-    "image": "",
-    "category": "other",
-    "techStack": [
-      "Python",
-      "AstrBot"
-    ],
-    "status": "in-progress",
-    "sourceCode": "https://github.com/ZhiheZier/astrbot_plugin_maimaidx",
-    "startDate": "2025-11-12",
-    "featured": true,
-    "tags": [
-      "AstrBot",
-      "MaimaiDX",
-      "Bot",
-      "Python"
-    ],
-    "showImage": false
-  },
-  {
-    "id": "Mizuki Content Manager",
-    "title": "Mizuki博客可视化内容管理",
-    "description": "通过WebUI实现Mizuki博客可视化内容管理",
-    "category": "web",
-    "techStack": [
-      "TypeScript",
-      "Astro"
-    ],
-    "status": "in-progress",
-    "sourceCode": "https://github.com/ZhiheZier/Mizuki-Content-Manager",
-    "startDate": "2026-08-20",
-    "featured": true,
-    "showImage": false,
-    "tags": [
-      "Mizuki",
-      "Astro"
-    ]
-  }
+	{
+		id: "astrbot-maimaidx",
+		title: "AstrBot MaimaiDX 插件",
+		description:
+			"基于 AstrBot 的舞萌DX（Maimai DX）插件，提供查分、数据查询等机器人功能。",
+		image: "",
+		category: "other",
+		techStack: ["Python", "AstrBot"],
+		status: "in-progress",
+		sourceCode: "https://github.com/ZhiheZier/astrbot_plugin_maimaidx",
+		startDate: "2026-08",
+		featured: true,
+		tags: ["AstrBot", "MaimaiDX", "Bot", "Python"],
+		showImage: false,
+	},
 ];
 
 // Get project statistics
