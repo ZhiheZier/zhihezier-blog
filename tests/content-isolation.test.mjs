@@ -43,8 +43,10 @@ test("private content stays outside tracked defaults and staging", () => {
 		assert.equal(fs.readFileSync(path.join(root, "content/posts/private.md"), "utf8"), "PRIVATE ARTICLE");
 		assert.equal(git("ls-files", "--stage"), beforeIndex);
 		write("public/assets/desktop-banner/new.jpg", "PUBLIC ASSET");
+		write("src/assets/fonts/new.woff2", "LOCAL FONT");
 		prepareWorkspace(root, path.join(root, "content"));
 		assert.equal(fs.readFileSync(path.join(workspace, "public/assets/desktop-banner/new.jpg"), "utf8"), "PUBLIC ASSET");
+		assert.equal(fs.readFileSync(path.join(workspace, "src/assets/fonts/new.woff2"), "utf8"), "LOCAL FONT");
 		assert.equal(git("ls-files", "--stage"), beforeIndex);
 		write(".gitignore", "/content/\n");
 		assert.throws(() => prepareWorkspace(root, path.join(root, "content")));

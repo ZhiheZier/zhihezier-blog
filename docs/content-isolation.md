@@ -5,7 +5,7 @@
 
 内容仓库只读取 `posts`、`spec`、`data`、`images` 四个目录，不读取配置覆盖。
 博客配置放在主仓库 `src/config/`，横幅、背景等主题资源放在 `public/assets/`。
-本地预览也会复制 `public/assets/` 中尚未跟踪且未被忽略的新资源，无须提前暂存。
+本地预览也会复制 `public/assets/`、`src/assets/` 中尚未跟踪且未被忽略的新资源，无须提前暂存。
 
 `pnpm dev`、`pnpm start` 和 `pnpm build` 会把主仓库代码与内容副本组合到
 被 Git 忽略的 `.content-workspace/` 中。构建成功后仅把产物复制到同样被忽略

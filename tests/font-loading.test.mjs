@@ -28,6 +28,15 @@ const fontCheckSource = await readFile(
 );
 
 describe("Custom font loading boundary", () => {
+	it("ships JetBrains Mono locally without a build-time font provider", async () => {
+		for (const name of ["JetBrainsMono-Regular.woff2", "JetBrainsMono-Italic.woff2"]) {
+			const font = await readFile(new URL(`../src/assets/fonts/${name}`, import.meta.url));
+			assert.equal(font.subarray(0, 4).toString("ascii"), "wOF2");
+			assert.ok(font.length > 10_000);
+			assert.ok(astroConfig.includes(`./src/assets/fonts/${name}`));
+		}
+		assert.doesNotMatch(astroConfig, /fontProviders\.fontsource\(/);
+	});
 	it("ships both local display fonts as complete WOFF2 files", async () => {
 		for (const name of ["ZenMaruGothic-Medium.woff2", "loli.woff2"]) {
 			const font = await readFile(
