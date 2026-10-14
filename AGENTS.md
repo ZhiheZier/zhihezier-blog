@@ -6,6 +6,9 @@
   its mapped copies, article files, images, or data in the public repository.
 - Keep `src/content`, `src/data`, and `public/images` as the original template
   defaults unless the user explicitly requests a template change.
+- Blog configuration and theme assets belong in this code repository. Only
+  `posts`, `spec`, `data`, and `images` are read from the private content repository;
+  do not sync private configuration overrides.
 - Build private content through `pnpm build` or `pnpm dev`. These commands use
   ignored `.content-workspace/`; never replace tracked directories with content
   symlinks or copies. Do not force-add ignored runtime files.

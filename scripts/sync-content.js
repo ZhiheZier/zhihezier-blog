@@ -17,11 +17,14 @@ export function prepareWorkspace(root, content) {
 	if (!relativeContent.startsWith("..") && !path.isAbsolute(relativeContent)) git("check-ignore", "--quiet", relativeContent.replaceAll(path.sep, "/") + "/privacy-check");
 	const tracked = git("ls-files", "-z").split("\0").filter(Boolean);
 	if (tracked.some((name) => name.startsWith(".content-workspace/") || name.startsWith("content/"))) throw new Error("Private directories must not be tracked");
-	const mappings = [["posts", "src/content/posts"], ["spec", "src/content/spec"], ["data", "src/data"], ["images", "public/images"], ["overrides", "src/config/overrides"]];
+	const mappings = [["posts", "src/content/posts"], ["spec", "src/content/spec"], ["data", "src/data"], ["images", "public/images"]];
+	// New public theme assets should work in local previews before being committed.
+	const publicAssets = git("ls-files", "--others", "--exclude-standard", "-z", "--", "public/assets").split("\0").filter(Boolean);
+	const sourceFiles = [...tracked, ...publicAssets];
 	// Only remove our exact generated directory, never the source repository.
 	fs.rmSync(workspace, { recursive: true, force: true });
 	fs.mkdirSync(workspace, { recursive: true });
-	for (const name of tracked) {
+	for (const name of sourceFiles) {
 		if (name.startsWith(".env") || mappings.some(([, dest]) => name.startsWith(dest + "/"))) continue;
 		const source = path.join(root, name);
 		if (!fs.existsSync(source)) continue;
